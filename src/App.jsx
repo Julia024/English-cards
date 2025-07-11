@@ -1,12 +1,12 @@
 import './App.css'
-import CardConteiner from './assets/components/card/CardContainer'
-import TestContainer from './assets/components/card/testConteiner'
+import CardContainer from './assets/components/cardTable/CardContainer'
+import Slider from './assets/components/cardDisplay/Slider'
 
 function App() {
   return (
     <>
-      {/* <CardConteiner/> */}
-      <TestContainer/>
+      <Slider></Slider>
+      <CardContainer/>
     </>
   )
 }

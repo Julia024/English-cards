@@ -3,7 +3,7 @@ import Card from "./Card"
 import styles from "./card.module.css"
 
 
-const TestContainer = () => {
+const CardContainer = () => {
     return (
         <ol className={styles.cardContainer}>
         {Arr.map((el) => (
@@ -18,4 +18,4 @@ const TestContainer = () => {
     )
 }
 
-export default TestContainer
+export default CardContainer
