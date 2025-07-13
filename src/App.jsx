@@ -5,7 +5,7 @@ import Slider from './assets/components/cardDisplay/Slider'
 function App() {
   return (
     <>
-      <Slider></Slider>
+      {/* <Slider/> */}
       <CardContainer/>
     </>
   )
