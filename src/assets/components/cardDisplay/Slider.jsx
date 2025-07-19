@@ -1,45 +1,46 @@
-import { useState } from "react"
-import Arr from "../Arr"
+import { useState, useEffect } from "react"
+import React from "react"
 import styles from "./slider.module.css"
+import Buttons from "./Buttons"
 
-const Slider = () => {
-    const [index, setIndex] = useState(0)
+
+const Slider = ({cards = [], defaultIndex = 0}) => {
+
+    const [index, setIndex] = useState(defaultIndex)
     const [translate, setTranslate] = useState('Показать перевод')
-    const handleChange = () => {
-        setTranslate(`${currentCard.russian}`)
-    }
 
-    const next = () => {
-        if (index < Arr.length - 1) {
-            setIndex(index + 1)
+    const hasCards = cards.length > 0
+    const currentCard = hasCards ? cards[index] : null
+
+
+    const handleTranslate = () => {
+        if (currentCard) {
+            setTranslate(currentCard.russian)
         }
-        setTranslate('Показать перевод')
     }
 
-    const previous = () => {
-        if (index > 0) {
-            setIndex (index - 1)
-        }
+    useEffect(() => {
         setTranslate('Показать перевод')
-    }
+    }, [index])
 
-    const currentCard = Arr[index]
+    if(!cards || cards.length === 0) {
+        return <div>No cards</div>
+    }
 
     return (
         <div className={styles.slider} >
             <div className={styles.cardOne} >
                 <h4 className={styles.english} >{currentCard.english}</h4>
                 <p className={styles.transcription} >{currentCard.transcription}</p>
-                <p onClick={handleChange} 
+                <p onClick={handleTranslate} 
                     className={`${translate === "Показать перевод" ? styles.hidden : styles.shows}`} >
                     {translate}</p>
             </div >
-            <div className={styles.btns}>
-                <button onClick={previous} disabled={index === 0} >Previous</button>
-                <button onClick={next} disabled={index === Arr.length - 1}>Next</button>
-            </div>
+            <Buttons index={index} setIndex={setIndex} cards={cards} />
+            <p>{index + 1}/{cards.length}</p>
         </div>
     )
 }
 
 export default Slider
+

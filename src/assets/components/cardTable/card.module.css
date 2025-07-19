@@ -8,13 +8,13 @@
 .card {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-    border: 1px solid rgb(237, 135, 173);
+    border: 1px solid rgb(54, 194, 129);
     justify-items: center;
     align-items: baseline;
-    background-color: rgba(241, 220, 242, 0.566);
+    background-color: rgba(204, 219, 207, 0.566);
 }
 .btn {
     margin: 2px;
-    background-color: rgb(232, 161, 250);
+    background-color: rgb(12, 142, 38);
     color: white;
 }

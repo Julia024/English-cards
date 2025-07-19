@@ -41,7 +41,14 @@
 }
 .btns {
     position: absolute;
-    top: 90%;
     transform: translateY(-50%);
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 350px;
+}
+button {
+    width: 80px;
+    background-color: rgb(204, 203, 203);
+    border-radius: 50px;
+    height: 80px;
 }
