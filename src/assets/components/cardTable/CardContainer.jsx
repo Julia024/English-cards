@@ -22,9 +22,8 @@ const CardContainer = () => {
     return (
         <ol className={styles.cardContainer}>
         {cards.map((card) => (
-            <li className={styles.list} >
+            <li className={styles.list} key={card.id}>
                 <Card
-                key={card.id}
                 card={card}
                 onSave={handleSave}
                 onDelete ={() => handleDelete(card.id)}
