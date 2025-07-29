@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
-import React from "react"
 import styles from "./slider.module.css"
-import Buttons from "./Buttons"
+import Buttons from "./Buttons.jsx"
 
 
 const Slider = ({cards = [], defaultIndex = 0}) => {

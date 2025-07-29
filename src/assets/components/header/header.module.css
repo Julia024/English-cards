@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    padding: 10px 16px 10px 60px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 253, 242);
+}
+.logo {
+    display: flex;
+    gap: 10px;
+}
+.logoText {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.icon {
+    max-width: 30px;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+.active {
+    color: #165492;
+    font-weight: 800;
+}
