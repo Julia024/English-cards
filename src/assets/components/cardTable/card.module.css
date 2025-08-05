@@ -17,4 +17,14 @@
     margin: 2px;
     background-color: rgb(12, 142, 38);
     color: white;
+    width: 100px;
+}
+.saveAndCancel {
+    width: 100px;
+    border: 2px solid rgb(126, 187, 35);
+}
+
+input {
+    font-size: 1.2rem;
+    text-align: center;
 }

@@ -38,8 +38,14 @@ const Card = ({card, onSave, onDelete}) => {
                 <input type="text"
                 value={russian}
                 onChange={((e) => setRussian(e.target.value))}/>
-                <button onClick={handleCancel}>Cancel</button>
-                <button onClick={handleSave}>Save</button>
+                <button onClick={handleCancel}
+                        className={styles.saveAndCancel}>
+                        Cancel
+                </button>
+                <button onClick={handleSave}
+                        className={styles.saveAndCancel}>
+                        Save
+                </button>
                 </>
             ) : (
                 <>

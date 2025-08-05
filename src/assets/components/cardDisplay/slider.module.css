@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 40px;
 }
 .cardOne {
     border: 2px solid rgb(155, 155, 155);
@@ -29,16 +30,23 @@
 .hidden {
     font-size: 1rem;
     color: rgb(138, 138, 138);
-    padding: 10px;
-    margin-inline: 40px;
     border-radius: 30px;
     background-color: green;
     color: white;
+    width: 200px;
+    border-radius: 10px;
+    height: 60px;
+
 }
 .shows {
     color: green;
     font-size: 1.5rem;
     font-weight: bold;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgb(126, 187, 35);
+    height: 60px;
+
 }
 .btns {
     position: absolute;
@@ -46,10 +54,14 @@
     display: flex;
     justify-content: space-between;
     gap: 350px;
+    width: auto;
+    padding: 0 20px;
+    pointer-events: none;
 }
-button {
+.previousAndNext {
     width: 80px;
-    background-color: rgb(204, 203, 203);
     border-radius: 50px;
+    pointer-events: all;
     height: 80px;
+    background-color: rgb(204, 203, 203);
 }
