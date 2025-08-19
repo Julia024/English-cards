@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './assets/components/header/Header'
 import CardContainer from './assets/components/cardTable/CardContainer'
-import Slider from './assets/components/cardDisplay/Slider'
+import Slider from './assets/components/cardGame/Slider'
 import Arr from './assets/components/Arr'
 import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import Missing from './assets/components/missing/Missing'
